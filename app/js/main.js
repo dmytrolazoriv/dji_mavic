@@ -9,4 +9,13 @@ $(function () {
         $(".questions__item").removeClass("questions__item--active");
         $(this).parent().addClass("questions__item--active");
     });
+
+    $('#fullpage').fullpage({
+        autoScrolling: true,
+        scrollHorizontally: true,
+        sectionSelector: '.page-section',
+        scrollOverflow: true,
+        menu: '#header__nav',
+        anchors: ['top', 'products', 'benefits', 'specification', 'questions', 'contacts'],
+    });
 });
